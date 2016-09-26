@@ -1,38 +1,22 @@
 ---
 layout: default
-title: Home
+title: About
 ---
+<h1>About me</h1>
+<p>I work for <a href="http://dabapps.co.uk/">DabApps</a> as a Software Engineer, on a wide range
+of web and mobile applications. Previously I studied for a degree in physics.</p>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}/{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<p>I discovered my passion for development while I was working towards my degree at the University of Exeter. With my mathematical background, I began with scientific programming, first in C and later in Python. My first collaborative project was an n-body simulator built with numPy, and rendered with matplotlib.</p>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+<p>Later I branched out to other languages and technologies. Java opened the door to developing
+native apps for android, and I've recently been working in javascript, with React, React Native and
+AngularJS. On the backend, we use Django and Django REST framework.</p>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+<p>Outside of work and side projects, my interests include surfing, playing music,
+and experiencing all the great culture on offer in Brighton.</p>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+
+<div class="avatar-container">
+  <div class="circle-avatar" style="background-image:url(img/profile.jpg)"></div>
 </div>
 
